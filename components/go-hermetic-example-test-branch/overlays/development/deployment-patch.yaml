@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-hermetic-example-test-branch
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/brianwcook-tenant/go-hermetic-example-1/go-hermetic-example-test-branch@sha256:6de903a52684bb727ac8942759ff84f4351451c5258f3a6ca1fbe58ceede6eb7
+        name: my-go
+        resources: {}
+status: {}
