@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: go-hermetic-example-test-branch
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
